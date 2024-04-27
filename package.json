@@ -1,0 +1,31 @@
+{
+  "name": "typescript-esm",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "tsc && npm run js",
+    "js": "node --experimental-require-module index.js",
+    "dev": "node --experimental-require-module -r ts-node/register index.ts"
+  },
+  "keywords": [
+    "commonjs",
+    "esm",
+    "typescript",
+    "default export",
+    "esModuleInterop"
+  ],
+  "author": "JonasDoe",
+  "license": "ISC",
+  "engines": {
+    "node": "=22.0.0"
+  },
+  "description": "Illustration of faulty esm import for an default export",
+  "dependencies": {
+    "oidc-provider": "^8.4.6"
+  },
+  "devDependencies": {
+    "@types/oidc-provider": "^8.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
